@@ -10,121 +10,128 @@
 <style>
 /******************* Base Styles ************************/
 
-* {  /* " star * " makes the property "inheritable" to all elements within the body 
+* {
+    /* " star * " makes the property "inheritable" to all elements within the body 
     by default box-sizing is non-inheritable  (* = select every element */
     box-sizing: border-box;
-    margin: 0;         /* Override default browser's margin */
+    margin: 0;              /* Override default browser's margin */
+    padding: 0;
 }
 
-div, .row{
-    width: 100%;
-    background-color: cyan;
-    padding: 0.9%;
+.row
+{
+    background-color: #B2D6FF;
     position: relative;
-
 }
 
-p{
-    height: 200px;
-}
-
-#headerP{
-    width: 120px;
-    height: 70px;
-    background-color: darkseagreen;
+.container1
+{
+    width: 33.33%;
+    height: 250px;
+    background-color: #F5CF8E;
     border: 1px solid black;
-    position: absolute;
-    top: 17.5px;
-    left: 491.5px;
+    position: relative;
+    float: left;
 }
 
-/* Mobile size */
-@media (max-width: 767px){
-    .mobile-scrn-size {
-        float: left;
-        width: 100%;
-    }
-
-    p{
-        color:greenyellow;
-        border: 1px solid black;
-    }
+.container2
+{
+    width: 33.33%;
+    height: 250px;
+    background-color: seashell;
+    border: 1px solid black;
+    position: relative;
+    float: left;
 }
 
-/* Tablet size */
-@media (min-width: 768px) and (max-width: 991px){
-    .tablet-scrn-size-sm, .tablet-scrn-size-lg{
-        float: left;
-        color: chocolate;
-    }
-
-    .tablet-scrn-size-sm{
-        width: 50%;
-    }
-
-    .tablet-scrn-size-lg{
-        width: 100%;
-    }
-
-    p {
-        border: 1px solid black;
-    }
+.container3
+{
+    width: 33.33%;
+    height: 250px;
+    background-color: #B2D6FF;;
+    border: 1px solid black;
+    position: relative;
+    float: left;
 }
 
-/* Desktop */
-@media (min-width: 992px){
-    .desktop-scrn-size {
-        float: left;
-        width: 33.33%;
-    }
 
-    p{
-        color: lightsteelblue;
-        border: 1px solid black;
-    }
+.header
+{
+    width: 150px;
+    height: 60px;
+    background-color: #F09A9D;
+    float: right;
+    border: 1px solid black;
 }
 
+.text
+{
+    text-align: center;
+}
+
+.bckgnd-container
+{
+    background-color: #B2D6FF;
+}
+
+.content
+{
+    margin: 12px 1.5%;
+    border: 1px solid black;
+    background-color: lightgray;
+    height: 228px;
+}
+
+.text-content
+{
+
+    clear: both;
+    padding: 9px 1.5%;
+}
 
 </style>
 </head>
-    <body>
+<body>
+    
     <h1>Our Menu</h1>
-
     <div class="row">
-        <div class="desktop-scrn-size tablet-scrn-size-sm mobile-scrn-size">
-            <div id="headerP"></div>
-            <p>
-             Lorem, ipsum dolor sit amet consectetur 
-             adipisicing elit. Voluptas eum quis, 
-             praesentium distinctio natus ducimus? 
-             Quas quo, quia fugit recusandae animi, 
-             temporibus quasi commodi magnam eum dolorum 
-             tempore laboriosam at?
-            </p>
-        </div>
+        <div class="container1">
 
-        <div class="desktop-scrn-size tablet-scrn-size-sm mobile-scrn-size">
-            <div id="headerP"></div>
-            <p> Lorem ipsum dolor sit amet consectetur, 
-                adipisicing elit. Illo at, 
-                neque temporibus ex recusandae quo repellat! 
-                Id ratione, aliquid debitis vel omnis, 
-                exercitationem dolor maiores aspernatur 
-                est mollitia quibusdam animi.
-            </p>
+            <div class="content">
+                <div class="header">
+                    <p class="text">HelloTHHHEEE</p>
+                </div>
+                <p class="text-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque harum aliquam suscipit illo, quo nesciunt corporis facere itaque aliquid aspernatur quam molestiae, distinctio ad aperiam enim quasi ut qui saepe.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum doloremque ipsa fugit quae, commodi asperiores, nisi perspiciatis impedit incidunt quis, ipsum iusto eum ullam. Omnis ad odio ipsum neque quo.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda vero cumque commodi accusantium nemo debitis quo. Incidunt, assumenda laboriosam nulla perferendis doloremque minima perspiciatis quisquam eaque dicta consequatur a expedita.
+                </p>
+            </div>
         </div>
-
-        <div class="desktop-scrn-size tablet-scrn-size-lg mobile-scrn-size">
-            <div id="headerP"></div>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur 
-            adipisicing elit. Magnam eum nesciunt voluptas 
-            iusto blanditiis, pariatur animi aspernatur 
-            nulla explicabo culpa distinctio vero dolores 
-            aliquid a nihil ullam sapiente possimus. Iste!
-            </p>
+        <div class="container2">
+            <div class="content">
+                <div class="header">
+                    <p class="text">helloTHEE</p>
+                </div>
+                <p class="text-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam cupiditate quo officia nam blanditiis laboriosam eos fugiat magnam pariatur neque. Veritatis illum veniam ut dolor. Aperiam rerum magni natus perspiciatis!
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio quibusdam, eius, dicta maxime corporis voluptates officiis vel cupiditate ad obcaecati quam velit totam asperiores, rem dolores architecto tempore doloremque neque?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor totam sed vel laborum quo tempore alias non deserunt asperiores odit, obcaecati a unde officia laboriosam expedita nam, tenetur libero cum?
+                </p>
+            </div>
         </div>
-
+        <div class="container3">
+            <div class="content">
+                <div class="header">
+                    <p class="text">HelloTheee</p>
+                </div>
+                <p class="text-content">
+                    Lorem, ipsum dolor sit ametconsectetur adipisicing elit. Architecto facilis exercitationem veritatis quam, modi sit qui vitae? Totam, quisquam libero placeat expedita recusandae a saepe dolor, obcaecati ullam quo reprehenderit?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam facere unde maxime deleniti dolor? Odio amet fuga dignissimos sint consequatur quod sapiente maiores placeat laudantium, veniam ducimus eaque corrupti fugiat!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quam accusantium quod in accusamus commodi similique aperiam, aspernatur dolorem voluptatibus nemo deleniti consequatur veniam sit itaque eum sint repellat dolorum.
+                </p>
+            </div>
+        </div>
     </div>
     </body>
 </html>
