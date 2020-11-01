@@ -1,117 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<!-- CSS -->
-<!-- Title --> 
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css.css"/>
 <title>Assignment 2</title>
-<!-- Scripts -->
-<!-- Machine Readable Info -->
-<style>
-/******************* Base Styles ************************/
-
-* {
-    /* " star * " makes the property "inheritable" to all elements within the body 
-    by default box-sizing is non-inheritable  (* = select every element */
-    box-sizing: border-box;
-    margin: 0;              /* Override default browser's margin */
-    padding: 0;
-}
-
-body {
-    background-color: aliceblue;
-}
-
-p {
-    margin-top: 7.5%;
-    text-align: center;
-}
-
-.row {
-    height: 500px;
-}
-
-.container {
-/*    border: 2px solid black; */
-    width: 33.33%;
-    height: 250px;
-    float: left;
-    padding:1%;
-}
-
-.content {
-    border: 2px solid black;
-    height: 100%;
-    background-color: lightgray;
-}
-
-.header-chicken {
-    border: 1px solid black;
-    background-color: #F09A9D;
-    height: 25%;
-    width: 35%;
-    float: right;
-    position: relative;
-}
-
-.header-beef {
-    border: 1px solid black;
-    background-color: indianred;
-    height: 25%;
-    width: 35%;
-    float: right;
-}
-
-.header-sushi {
-    border: 1px solid black;
-    background-color: lightyellow;
-    height: 25%;
-    width: 35%;
-    float: right;
-}
-
-.section-title {
-    margin-top: 2%;
-    text-align: center;
-    margin-bottom: 3%;
-}
-
-.text-chicken {
-    margin-top: 10%;
-    padding-left: 1.5%;
-    padding-right: 1.5%;
-    border: 1px solid white;
-    height: 71%;
-    text-align: left;
-}
-
-.text-beef {
-    margin-top: 10%;
-    padding-left: 1.5%;
-    padding-right: 1.5%;
-    border: 1px solid white;
-    height: 71%;
-    text-align: left;
-}
-
-.text-sushi {
-    margin-top: 10%;
-    padding-left: 1.5%;
-    padding-right: 1.5%;
-    border: 1px solid white;
-    height: 71%;
-    text-align: left;
-}
-
-</style>
 </head>
 <body>
-    <h1 class="section-title">Our Menu</h1>
+    <h1 class="homepage-title">Our Menu</h1>
     <div class="row">
-        <div class="container">
-            <div class="content">
-                <div class="header-chicken"><p>Chicken</p></div>
-                <p class="text-chicken">
+        <div class="container-defaults container-lg container-mid-top container-sm">
+            <div class="content-defaults">
+                <div class="header-defaults header-chicken"><p class="section-title">Chicken</p></div>
+                <p class="text-defaults">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Fugit praesentium eligendi velit repellendus doloribus 
                     perspiciatis necessitatibus blanditiis. Doloremque 
@@ -125,10 +27,10 @@ p {
                 </p>
             </div>
         </div>
-        <div class="container">
-            <div class="content">
-                <div class="header-beef"><p>Beef</p></div>
-                <p class="text-beef">
+        <div class="container-defaults container-lg container-mid-top container-sm">
+            <div class="content-defaults">
+                <div class="header-defaults header-beef"><p class="section-title">Beef</p></div>
+                <p class="text-defaults">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                     Neque ut, velit corporis exercitationem quasi amet nostrum 
                     debitis voluptatum! Exercitationem, voluptas obcaecati. 
@@ -141,10 +43,10 @@ p {
                 </p>
             </div>
         </div>
-        <div class="container">
-            <div class="content">
-                <div class="header-sushi"><p>Sushi</p></div>
-                <p class="text-sushi">
+        <div class="container-defaults container-lg container-mid-bottom container-sm">
+            <div class="content-defaults">
+                <div class="header-defaults header-sushi"><p class="section-title">Sushi</p></div>
+                <p class="text-defaults">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Perspiciatis saepe veritatis odit possimus corrupti vel 
                     deleniti accusantium velit. Expedita aut temporibus eveniet 
